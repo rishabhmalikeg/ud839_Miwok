@@ -34,23 +34,23 @@ public class ColorsActivity extends AppCompatActivity {
 
 
         ArrayList<word> num = new ArrayList<word>();
-        num.add(new word("red", "lal"));
-        num.add(new word("green", "hara"));
-        num.add(new word("yellow", "peela"));
-        num.add(new word("black", "kalla"));
-        num.add(new word("white", "saffad"));
-        num.add(new word("red", "lal"));
-        num.add(new word("green", "hara"));
-        num.add(new word("yellow", "peela"));
-        num.add(new word("black", "kalla"));
-        num.add(new word("white", "saffad"));
-        num.add(new word("red", "lal"));
-        num.add(new word("green", "hara"));
-        num.add(new word("yellow", "peela"));
-        num.add(new word("black", "kalla"));
-        num.add(new word("white", "saffad"));
+        num.add(new word("red", "lal",R.raw.music1));
+        num.add(new word("green", "hara",R.raw.music1));
+        num.add(new word("yellow", "peela",R.raw.music1));
+        num.add(new word("black", "kalla",R.raw.music1));
+        num.add(new word("white", "saffad",R.raw.music1));
+        num.add(new word("red", "lal",R.raw.music1));
+        num.add(new word("green", "hara",R.raw.music1));
+        num.add(new word("yellow", "peela",R.raw.music1));
+        num.add(new word("black", "kalla",R.raw.music1));
+        num.add(new word("white", "saffad",R.raw.music1));
+        num.add(new word("red", "lal",R.raw.music1));
+        num.add(new word("green", "hara",R.raw.music1));
+        num.add(new word("yellow", "peela",R.raw.music1));
+        num.add(new word("black", "kalla",R.raw.music1));
+        num.add(new word("white", "saffad",R.raw.music1));
 
-        wordAdaptor adaptor = new wordAdaptor(this, num);
+        wordAdaptor adaptor = new wordAdaptor(this, num, R.color.category_colors);
 
         ListView newview = (ListView)findViewById(R.id.list);
         newview.setAdapter(adaptor);

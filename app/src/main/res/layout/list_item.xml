@@ -1,23 +1,65 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<!--this is the layout for each datatype in this case data passed in array adaptor -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/tan_background"
-    android:orientation="vertical"
-    tools:context="com.example.android.miwok.MainActivity">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/nmber"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"
-        tools:text="one"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/lan"
-        android:layout_marginLeft="16dp"
-        tools:text="ekk"/>
+    android:layout_height="88dp"
+    android:orientation="horizontal"
+    android:background="#fff7DA">
 
-</LinearLayout>
+    <ImageView
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_margin="5dp"
+        android:id="@+id/images"
+        tools:src="@drawable/androidparty"
+        />
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_toRightOf="@id/images"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#FD8E09"
+        android:orientation="vertical"
+        tools:context="com.example.android.miwok.MainActivity">
+            <TextView
+                android:id="@+id/nmber"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="16dp"
+                tools:text="one"
+                android:gravity="bottom"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/lan"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="16dp"
+
+                android:textSize="18sp"
+                android:gravity="top"
+                tools:text="ekk" />
+
+
+
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/play_btn" />
+
+
+</RelativeLayout>
+
+
